@@ -1,0 +1,260 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: Đình Phước
+Template: flatsome
+Version: 3.0
+*/
+:root {
+  --primary-color: #bd18ec;
+}
+.header-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchform .flex-row .flex-col:nth-child(even) {
+  order: 0;
+}
+.searchform .flex-row .flex-col:last-child {
+  order: 2;
+}
+.searchform input,
+.searchform select,
+.searchform button {
+  height: 45px;
+}
+.searchform input {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 5px 15px;
+}
+.searchform button {
+  width: 60px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.search-form-categories {
+  order: 1;
+}
+.badge-container.left {
+  right: 10px;
+  left: inherit;
+}
+.pt-5 {
+  padding-top: 5px;
+}
+.badge-inner.on-sale {
+  border-radius: 50%;
+  background-color: #f01825;
+}
+.search_categories {
+  width: 100% !important;
+}
+.search_categories option {
+  text-transform: capitalize;
+}
+.cart-item .nav-dropdown {
+  min-width: 450px;
+}
+.address-field {
+  width: 100%;
+}
+.tab.has-icon {
+  padding: 5px 20px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+}
+.tab.has-icon.active {
+  padding: 5px 20px;
+  background-color: var(--primary-color);
+  border: 1px solid transparent;
+}
+.tab.has-icon.active a span {
+  color: #fff;
+}
+.tab.has-icon a span {
+  color: var(--primary-color);
+}
+.section-footer h3.section-title-normal {
+  border-bottom: none;
+}
+.section-footer h3,
+.section-footer span,
+.section-footer strong {
+  color: #fff !important;
+}
+.section-footer .section-title-container {
+  margin-bottom: 0;
+}
+.voucher-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 10px;
+}
+.coupon_item {
+  width: 100%;
+  text-align: center;
+}
+.voucher-list .coupon_item .coupon_icon {
+  padding: 8px 4px 8px 8px;
+  background-color: red;
+}
+.voucher-list .coupon_item {
+  position: relative;
+  background: #fff;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.15));
+  min-height: 100px;
+  border-radius: 5px;
+}
+
+.voucher-list .coupon_item .coupon_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 8px 8px 10px;
+  width: 100%;
+  color: #333;
+  background-color: #fff;
+}
+.coupon_title,
+.coupon_desc {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 14px;
+}
+.coupon_copy {
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-right: 0;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.product-small .col-inner {
+  box-shadow: 0 1px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.section-title b {
+  opacity: 0;
+}
+.add-to-cart-button {
+  position: relative;
+}
+.add-to-cart-button a {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -100px;
+  background: var(--primary-color) !important;
+  color: #fff !important;
+  border: 1px solid var(--primary-color) !important;
+  transition: ease-in 0.5s;
+  opacity: 0;
+}
+.product-small:hover .add-to-cart-button a {
+  top: -140px;
+  opacity: 1;
+}
+.section-free .ux-logo .ux-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 20px !important;
+  margin-bottom: 10px;
+}
+.section-free .ux-logo.h .ux-logo-link {
+  background-color: #e91e63;
+}
+.section-free .ux-logo.t .ux-logo-link {
+  background-color: var(--primary-color);
+}
+.section-free .ux-logo.x .ux-logo-link {
+  background-color: #2196f3;
+}
+.section-free .ux-logo .ux-logo-link img {
+  height: auto !important;
+  filter: invert(1);
+}
+
+.section-free .section-title-container.h,
+.section-free .section-title-container.t,
+.section-free .section-title-container.x {
+  position: relative;
+}
+.section-title-container.h::after {
+  position: absolute;
+  top: 130%;
+  left: 43%;
+  background-color: #e91e63;
+  height: 2px;
+  width: 50px;
+}
+.section-title-container.t::after {
+  position: absolute;
+  top: 130%;
+  left: 43%;
+  background-color: var(--primary-color);
+  height: 2px;
+  width: 50px;
+}
+.section-title-container.x::after {
+  position: absolute;
+  top: 130%;
+  left: 43%;
+  background-color: #2196f3;
+  height: 2px;
+  width: 50px;
+}
+.search-footer .search-form-categories {
+  display: none;
+}
+.search-footer .searchform input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 5px 15px;
+}
+.search-footer .searchform button {
+  width: 60px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.product-category .box-text.text-center {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  bottom: 0;
+  padding: 0.8em 1em 1em;
+  position: absolute;
+  transition: background 0.3s;
+  z-index: 1;
+  height: 100%;
+  /* align-items: center; */
+  display: flex;
+  align-items: center;
+  color: #fff !important;
+}
+.product-category .box-text.text-center h5 {
+  color: #fff !important;
+}
+@media screen and (max-width: 768px) {
+  .searchform .flex-row {
+    display: block;
+  }
+  .searchform input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 5px 15px;
+  }
+  .searchform button {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .tabbed-content ul li {
+    width: 100%;
+    text-align: center !important;
+    margin-bottom: 5px;
+  }
+}
